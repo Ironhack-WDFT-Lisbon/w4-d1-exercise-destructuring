@@ -105,4 +105,4 @@ const {
 
 const moviesInfo = movies.map(({ title, year }) => ({ title, year }));
 
-console.log(moviesInfo);
+// console.log(moviesInfo);
