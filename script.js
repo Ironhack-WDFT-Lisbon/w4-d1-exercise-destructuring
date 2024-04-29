@@ -81,13 +81,13 @@ const movies = [
   },
 ];
 
-// 1. Deconstruct the first 3 movies from the IMDBTop25 array and spread the rest of the movies into a new array called restOfMovies
+// 1. Deconstruct the first 3 movies from the IMDBTop10 array and spread the rest of the movies into a new array called restOfMovies
 const [movie1, movie2, movie3, ...restOfMovies] = movies;
 
-// console.log(movie1);
-// console.log(movie2);
-// console.log(movie3);
-// console.log(restOfMovies);
+console.log(movie1);
+console.log(movie2);
+console.log(movie3);
+console.log(restOfMovies);
 
 // 2. Deconstruct the score of the first movie into a new variable called firstMovieScore
 const { score: firstMovieScore } = movie1;
@@ -105,4 +105,4 @@ const {
 
 const moviesInfo = movies.map(({ title, year }) => ({ title, year }));
 
-// console.log(moviesInfo);
+console.log(moviesInfo);
