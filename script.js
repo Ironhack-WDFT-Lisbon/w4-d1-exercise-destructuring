@@ -80,3 +80,29 @@ const movies = [
     year: 2001,
   },
 ];
+
+// 1. Deconstruct the first 3 movies from the IMDBTop25 array and spread the rest of the movies into a new array called restOfMovies
+const [movie1, movie2, movie3, ...restOfMovies] = movies;
+
+// console.log(movie1);
+// console.log(movie2);
+// console.log(movie3);
+// console.log(restOfMovies);
+
+// 2. Deconstruct the score of the first movie into a new variable called firstMovieScore
+const { score: firstMovieScore } = movie1;
+
+// console.log(firstMovieScore);
+
+// 3. Deconstruct the rottenTomatoes score of the second movie from the movies array
+const {
+  score: { rottenTomatoes: secondMovieRottenTomatoes },
+} = movie2;
+
+// console.log(secondMovieRottenTomatoes);
+
+// 4. Descontruct form each movie the title and year, and store them in a new array called moviesInfo
+
+const moviesInfo = movies.map(({ title, year }) => ({ title, year }));
+
+// console.log(moviesInfo);
